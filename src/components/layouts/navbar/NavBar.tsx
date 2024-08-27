@@ -77,7 +77,7 @@ const UserNavbar = () => {
                 </div>
 
 
-
+  
                 {/* Menu button for mobile view */}
                 <div className="md:hidden">
                     <button className="text-gray-500 focus:outline-none">
