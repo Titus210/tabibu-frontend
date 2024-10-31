@@ -20,10 +20,10 @@ const PrimaryButton: React.FC<ButtonProps> = ({ buttonName, bgColor, onClick, ty
     const disabledClass = disabled ? 'opacity-50 cursor-not-allowed' : '';
 
     return (
-        <div className='flex items-center justify-center'>
-            <Link to={disabled ? '#' : (pageLink || '#')}>
+        <div className='flex w-full items-center justify-center'>
+            <Link to={disabled ? '#' : (pageLink || '#')}  className='w-full'>
                 <button
-                    className={`${backgroundClass} ${hoverClass} ${textClass} ${disabledClass} font-bold py-2 px-4 rounded-md w-full md:w-auto`}
+                    className={`${backgroundClass} ${hoverClass} ${textClass} ${disabledClass} font-bold py-2 px-4 rounded-md w-full md:w-full`}
                     onClick={disabled ? undefined : onClick} // Disable click when the button is disabled
                     type={type || "button"}
                     disabled={disabled}
