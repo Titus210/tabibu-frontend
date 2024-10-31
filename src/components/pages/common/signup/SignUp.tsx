@@ -45,6 +45,7 @@ const CreateAccount = () => {
     )
 }
 
+/* Get users personal Information */
 
 const PersonaInformation = () => {
     return (
